@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * 1. Create a Shopping Cart
+ * 1. Create an empty Shopping Cart
  * 2. I want to be able to add items to my shopping cart
  * 3. I should be able to calculate the subtotal of my shopping cart
  *    if the shopping cart is empty return 0
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * */
 public class ShoppingCart {
 
-    ArrayList<Item> items;
+    private ArrayList<Item> items;
 
     {
         items = new ArrayList<>();
@@ -20,30 +20,30 @@ public class ShoppingCart {
         return items;
     }
 
-    public void add(Item item) {
+    public void addItem(Item item) {
         items.add(item);
     }
 
     public float calculateSubtotal() {
-        float subtotal = calculateTotal();
+        float subtotal = calculateTotalPrice();
         subtotal = applyDiscount(subtotal);
-        return subtotal;
-    }
-
-    private float calculateTotal() {
-        float subtotal = 0;
-        for (Item item:
-                items) {
-            subtotal += item.price;
-        }
         return subtotal;
     }
 
     private float applyDiscount(float subtotal) {
         if (subtotal > 200 && subtotal < 300) {
-            subtotal = subtotal * (.90f);
+            subtotal = subtotal * 0.90f;
         } else if (subtotal > 300) {
-            subtotal = subtotal * (.80f);
+            subtotal = subtotal * 0.80f;
+        }
+        return subtotal;
+    }
+
+    private float calculateTotalPrice() {
+        float subtotal = 0;
+        for (Item item:
+                items) {
+            subtotal += item.price;
         }
         return subtotal;
     }

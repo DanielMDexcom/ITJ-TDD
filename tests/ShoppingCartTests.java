@@ -2,6 +2,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.swing.*;
+
 public class ShoppingCartTests {
 
     private ShoppingCart shoppingCart;
@@ -14,20 +16,20 @@ public class ShoppingCartTests {
     public void testWhenCreatingShoppingListThenItemsAreEmpty() {
         // ARRANGE
         // ACT
-        int shoppingCartSize = shoppingCart.getItems().size();
+        int size = shoppingCart.getItems().size();
         // ASSERT
-        Assert.assertEquals(shoppingCartSize, 0);
+        Assert.assertEquals(0, size);
     }
 
     @Test
     public void testWhenAddingItemToShoppingListThenReturnItem() {
         // ARRANGE
-        Item keyboard = new Item("Keyboard", 100f);
+        Item keyboard = new Item("Keyboard", 100);
         // ACT
-        shoppingCart.add(keyboard);
-        Item item = shoppingCart.items.getFirst();
+        shoppingCart.addItem(keyboard);
+        Item item = shoppingCart.getItems().get(0);
         // ASSERT
-        Assert.assertEquals(item.name, "Keyboard");
+        Assert.assertEquals("Keyboard", item.name);
     }
 
     @Test
@@ -36,30 +38,30 @@ public class ShoppingCartTests {
         // ACT
         float subtotal = shoppingCart.calculateSubtotal();
         // ASSERT
-        Assert.assertEquals(subtotal, 0, 0);
+        Assert.assertEquals(0, subtotal, 0);
     }
 
     @Test
     public void testWhenCalculatingSubtotalLessThan200ThenReturnSubtotal() {
         // ARRANGE
-        Item keyboard = new Item("Keyboard", 50f);
-        Item mouse = new Item("Mouse", 50f);
+        Item keyboard = new Item("Keyboard", 50);
+        Item mouse = new Item("Keyboard", 50);
         // ACT
-        shoppingCart.add(keyboard);
-        shoppingCart.add(mouse);
+        shoppingCart.addItem(keyboard);
+        shoppingCart.addItem(mouse);
         float subtotal = shoppingCart.calculateSubtotal();
         // ASSERT
-        Assert.assertEquals(subtotal, 100f, 0);
+        Assert.assertEquals(100, subtotal, 0.1);
     }
 
     @Test
     public void testWhenCalculatingSubtotalGreaterThan200ThenReturnSubtotalWithDiscount() {
         // ARRANGE
-        Item keyboard = new Item("Keyboard", 150f);
-        Item mouse = new Item("Mouse", 100f);
+        Item keyboard = new Item("Keyboard", 100);
+        Item mouse = new Item("Keyboard", 150);
         // ACT
-        shoppingCart.add(keyboard);
-        shoppingCart.add(mouse);
+        shoppingCart.addItem(keyboard);
+        shoppingCart.addItem(mouse);
         float subtotal = shoppingCart.calculateSubtotal();
         // ASSERT
         Assert.assertEquals(225f, subtotal, 0.1);
@@ -69,12 +71,12 @@ public class ShoppingCartTests {
     public void testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWithDiscount() {
         // ARRANGE
         Item keyboard = new Item("Keyboard", 200);
-        Item mouse = new Item("Mouse", 200);
+        Item mouse = new Item("Keyboard", 200);
         // ACT
-        shoppingCart.add(keyboard);
-        shoppingCart.add(mouse);
+        shoppingCart.addItem(keyboard);
+        shoppingCart.addItem(mouse);
         float subtotal = shoppingCart.calculateSubtotal();
         // ASSERT
-        Assert.assertEquals(320, subtotal, 0.1);
+        Assert.assertEquals(320f, subtotal, 0.1);
     }
 }
