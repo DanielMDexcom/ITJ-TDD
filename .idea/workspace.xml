@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e72ee811-73d1-4c9e-b71c-6db0525670e3" name="Changes" comment="TDD Implementation">
+      <change afterPath="$PROJECT_DIR$/src/DefaultDiscountProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DiscountProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FakeDiscountProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SummerDiscountProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/SummerDiscountTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ShoppingCartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ShoppingCartTests.java" afterDir="false" />
@@ -17,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,38 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.11876482",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.11876482&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingCartTests">
+  <component name="RunManager" selected="JUnit.SummerDiscountTests">
     <configuration name="ShoppingCartTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITJ-TDD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan200ThenReturnSubtotalWithDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITJ-TDD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
-      <option name="METHOD_NAME" value="testWhenCalculatingSubtotalGreaterThan200ThenReturnSubtotalWithDiscount" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,11 +75,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTests.testWhenCalculatingSubtotalIfNoItemsThenReturnZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan500WhenSummerThenReturnSubtotalWithDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITJ-TDD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
-      <option name="METHOD_NAME" value="testWhenCalculatingSubtotalIfNoItemsThenReturnZero" />
+      <option name="METHOD_NAME" value="testWhenCalculatingSubtotalGreaterThan500WhenSummerThenReturnSubtotalWithDiscount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,13 +95,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SummerDiscountTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITJ-TDD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SummerDiscountTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SummerDiscountTests" />
         <item itemvalue="JUnit.ShoppingCartTests" />
+        <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan500WhenSummerThenReturnSubtotalWithDiscount" />
         <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWithDiscount" />
-        <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan200ThenReturnSubtotalWithDiscount" />
         <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalLessThan200ThenReturnSubtotal" />
-        <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalIfNoItemsThenReturnZero" />
       </list>
     </recent_temporary>
   </component>
