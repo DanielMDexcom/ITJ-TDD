@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e72ee811-73d1-4c9e-b71c-6db0525670e3" name="Changes" comment="TDD Implementation">
-      <change afterPath="$PROJECT_DIR$/src/DefaultDiscountProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiscountProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FakeDiscountProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SummerDiscountProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SummerDiscountTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DefaultDiscountProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DefaultDiscountProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DiscountProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FakeDiscountProvider.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SummerDiscountProvider.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ShoppingCartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ShoppingCartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SummerDiscountTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SummerDiscountTests">
+  <component name="RunManager" selected="JUnit.ShoppingCartTests">
     <configuration name="ShoppingCartTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITJ-TDD" />
       <option name="PACKAGE_NAME" value="" />
@@ -65,21 +65,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWithDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWith20Discount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITJ-TDD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
-      <option name="METHOD_NAME" value="testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWithDiscount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan500WhenSummerThenReturnSubtotalWithDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITJ-TDD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
-      <option name="METHOD_NAME" value="testWhenCalculatingSubtotalGreaterThan500WhenSummerThenReturnSubtotalWithDiscount" />
+      <option name="METHOD_NAME" value="testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWith20Discount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,21 +85,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SummerDiscountTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTests.testWhenCreatingShoppingListThenShoppingCartIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITJ-TDD" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SummerDiscountTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
+      <option name="METHOD_NAME" value="testWhenCreatingShoppingListThenShoppingCartIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartTests.test_GivenShoppingCartWithItems_WhenCalculatingSubtotalGreaterThan200_ThenReturnSubtotalWithDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITJ-TDD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTests" />
+      <option name="METHOD_NAME" value="test_GivenShoppingCartWithItems_WhenCalculatingSubtotalGreaterThan200_ThenReturnSubtotalWithDiscount" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SummerDiscountTests" />
         <item itemvalue="JUnit.ShoppingCartTests" />
-        <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan500WhenSummerThenReturnSubtotalWithDiscount" />
-        <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWithDiscount" />
+        <item itemvalue="JUnit.ShoppingCartTests.testWhenCreatingShoppingListThenShoppingCartIsEmpty" />
+        <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalGreaterThan300ThenReturnSubtotalWith20Discount" />
+        <item itemvalue="JUnit.ShoppingCartTests.test_GivenShoppingCartWithItems_WhenCalculatingSubtotalGreaterThan200_ThenReturnSubtotalWithDiscount" />
         <item itemvalue="JUnit.ShoppingCartTests.testWhenCalculatingSubtotalLessThan200ThenReturnSubtotal" />
       </list>
     </recent_temporary>
@@ -131,8 +132,27 @@
       <option name="project" value="LOCAL" />
       <updated>1709243661946</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TDD Implementation">
+      <option name="closed" value="true" />
+      <created>1725005892667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725005892667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TDD Implementation" />
